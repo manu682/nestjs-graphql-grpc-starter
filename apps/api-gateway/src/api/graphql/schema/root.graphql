@@ -1,0 +1,13 @@
+type Query {
+    students: [Student]
+}
+
+type Mutation {
+    login: Auth
+    refreshToken: Auth
+    logout: Auth
+}
+
+type Auth {
+    token: String
+}
